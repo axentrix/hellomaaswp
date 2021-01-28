@@ -552,7 +552,8 @@ header .header-section {
   width: 100%;
   opacity: 1;
   transition: all 0.3s;
-  height: 100%;
+  box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
 }
 header .header-section .navbar {
   box-shadow: none;
@@ -729,9 +730,9 @@ footer ul li a {
   opacity: 0;
 }
 .one {
-  background: url("../images/topleftbg.svg") 0 0 no-repeat;
-  background-size: 100vmin;
-  min-height: 100vh;
+  background: url("../images/amsterdam.svg") 100% 0 no-repeat;
+  background-size: 80vmin;
+  min-height: 50vh;
   width: 100%;
   margin-top: 80px;
   justify-content: center;
@@ -1582,4 +1583,22 @@ input:-internal-autofill-selected {
 }
 .align-self-center {
   align-self: center;
+}
+.clients {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logobox {
+  display: inline-flex;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 30px;
+  width: 100%;
+  min-width: 92px;
+  min-height: 92px;
+  flex: 1;
+  margin: 2px;
+  align-items: center;
+  justify-content: center;
 }

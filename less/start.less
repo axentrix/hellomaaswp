@@ -30,23 +30,27 @@ header {
     display: flex;
     flex-direction: column;
 
-    .navbar-brand{
-        opacity:1;
-        z-index:999;
+    .navbar-brand {
+        opacity: 1;
+        z-index: 999;
     }
+
     .header-section {
         margin-bottom: 30px;
         width: 100%;
         opacity: 1;
         transition: all 0.3s;
-        height:100%;
+       
+        box-shadow: 0px 4px 10px -5px rgba(0,0,0,0.15);
+        background: @white;
+
         .navbar {
             box-shadow: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            align-self:center;
-            height:80px;
+            align-self: center;
+            height: 80px;
         }
 
         &.aos-animate {
@@ -64,9 +68,10 @@ header {
                 padding: 0;
             }
 
-            .navbar-brand {opacity:1;
+            .navbar-brand {
+                opacity: 1;
                 padding: 0;
-                margin-left:20px;
+                margin-left: 20px;
 
                 img {
                     max-width: 180px !important;
@@ -93,7 +98,7 @@ header {
     a {
         text-transform: uppercase;
         color: @maincolor;
-        font-weight:bold;
+        font-weight: bold;
         font-size: 14px;
         margin: 0 12px;
 
@@ -292,21 +297,20 @@ footer {background:darken(@darkbg, 6%) !important;
 
 
 
-.one{
-    background: url("../images/topleftbg.svg") 0 0 no-repeat;
-    background-size: 100vmin;
-    min-height: 100vh;
+.one {
+    background: url("../images/amsterdam.svg") 100% 0 no-repeat;
+    background-size: 80vmin;
+    min-height: 50vh;
     width: 100%;
-    margin-top:80px;
-    justify-content:center;
-    align-items:center;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
     position: relative;
     display: flex;
 
-    .message{
-        align-self:center;
+    .message {
+        align-self: center;
     }
-  
 }
 .slick-slide:first-child {
     background: url("../images/topleftbg.svg") 0 0 no-repeat;
@@ -1303,4 +1307,30 @@ input:-internal-autofill-selected{
 .align-self-center{
 
     align-self:center;
+}
+
+.amsterdam{
+
+   
+}
+.clients{
+
+}
+
+.clients{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.logobox {display:inline-flex;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+    background: @white;
+    border-radius:30px;
+    width:100%;
+    min-width:92px;
+    min-height:92px;
+  flex:1;
+  margin:2px;
+    align-items:center;
+    justify-content:center;
 }

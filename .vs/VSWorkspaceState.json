@@ -3,8 +3,9 @@
     "",
     "\\animation",
     "\\images",
+    "\\images\\logos",
     "\\less"
   ],
-  "SelectedNode": "\\less\\variables.less",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

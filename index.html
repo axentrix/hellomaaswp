@@ -82,12 +82,12 @@
     <main>
 
 
-        <section class="one ">
+        <section class="one">
 
 
             <div class="container">
                 <div class="row w-100">
-                    <div class="col-lg-5 message" data-aos="fade-up">
+                    <div class="col-lg-6 message" data-aos="fade-up">
 
                         <h2>
                             Say Hello to<br />
@@ -96,7 +96,7 @@
                         <h4>All in one platform to simplify your marketing operations: </h4>
 
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
 
                         <div id="illustration">  <lottie-player src="animation/data_illustration.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
 
@@ -106,30 +106,34 @@
 
                 </div>
 
+                <div class="row align-items-center justify-content-center clients mb-4 mt-4">
 
-            </div>
-            </div>
+                    <div class="col-lg-12 d-flex align-items-center message">
 
-        </section>
-
-
-
-        <section class="socialize mb-4">
-
-            <div class="container">
-
-                <div class="row align-items-center justify-content-center">
-
-                    <div class="col-lg-4 d-flex align-items-center message">
-
-                        <h3>Proud of our clients</h3>
+                        <h3 class="mb-4">Proud of our clients</h3>
 
 
                     </div>
 
+                    <div class="logobox"><img src="images/logos/deloitte.svg" /></div>
+                   <div class="logobox"><img src="images/logos/akoz.svg"/></div>
+                   <div class="logobox"><img src="images/logos/logo-vangogh-museum.svg"/></div>
+                    <div class="logobox"><img src="images/logos/ing.svg"/></div>
+                   <div class="logobox"><img src="images/logos/hearst.svg"/></div>
+                  <div class="logobox"><img src="images/logos/itohdenki.svg"/></div>
+                  <div class="logobox"><img src="images/logos/orikami.svg"/></div>
+                 <div class="logobox"><img src="images/logos/inspark-logo.svg"/></div>
+                   <div class="logobox"><img src="images/logos/hgbf.svg"/></div>
+               <div class="logobox"><img src="images/logos/flego.svg"/></div>
                 </div>
             </div>
+           
+
         </section>
+
+
+
+    
 
 
         <section class="screenshots">
@@ -141,7 +145,7 @@
                             Playbook
                         </h4>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up">
                         <div id="screenshot1"> </div>
                     </div>
 
@@ -152,8 +156,8 @@
 
                 <div class="row">
 
-                    <div class="col-lg-6">
-                        <div id="screenshot2">  <lottie-player src="animation/data_people.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div id="screenshot2"> </div>
                     </div>
                     <div class="col-lg-6 align-self-center" data-aos="fade-up">
                         <h4>
@@ -171,8 +175,8 @@
                             Marketing Packages
                         </h4>
                     </div>
-                    <div class="col-lg-6">
-                        <div id="screenshot3">  <lottie-player src="animation/data_packages.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div id="screenshot3"> </div>
                     </div>
 
 
@@ -181,7 +185,7 @@
                 <div class="row">
 
                     <div class="col-lg-6">
-                        <div id="screenshot4">  <lottie-player src="animation/data_happiness.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
+                        <div id="screenshot4" data-aos="fade-up"> </div>
                     </div>
                     <div class="col-lg-6 align-self-center" data-aos="fade-up">
                         <h4>
@@ -243,10 +247,10 @@
 
         $(document).ready(function () {
 
-            var anim;
-            var elem = document.getElementById('screenshot1')
-            var animData = {
-                container: elem,
+            var anim1;
+            var elem1 = document.getElementById('screenshot1')
+            var animData1 = {
+                container: elem1,
                 renderer: 'svg',
                 loop: false,
                 autoplay: false,   /*MAKE SURE THIS IS FALSE*/
@@ -256,26 +260,223 @@
                 path: 'animation/data_screenshot1.json',
                 name: 'screenshot1',
             };
-            anim = bodymovin.loadAnimation(animData);
+            anim1 = bodymovin.loadAnimation(animData1);
 
-            var waypoint = new Waypoint({
-                element: document.getElementById('screenshot1'),
-                handler: function (direction) {
-                    anim.play();   /*THIS IS WHERE WE PLAY THE ANIMATION*/
+
+
+
+
+
+            var anim2;
+            var elem2 = document.getElementById('screenshot2')
+            var animData2 = {
+                container: elem2,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,   /*MAKE SURE THIS IS FALSE*/
+                rendererSettings: {
+                    progressiveLoad: false
                 },
-                offset: 'screenshot1' /* string defined in waypoint.js See documentation for more presets */
+                path: 'animation/data_people.json',
+                name: 'screenshot1',
+            };
+            anim2 = bodymovin.loadAnimation(animData2);
+
+
+
+
+            var anim3;
+            var elem3 = document.getElementById('screenshot3')
+            var animData3 = {
+                container: elem3,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,   /*MAKE SURE THIS IS FALSE*/
+                rendererSettings: {
+                    progressiveLoad: false
+                },
+                path: 'animation/data_packages.json',
+                name: 'screenshot1',
+            };
+            anim3 = bodymovin.loadAnimation(animData3);
+
+            var anim4;
+            var elem4 = document.getElementById('screenshot4')
+            var animData4 = {
+                container: elem4,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,   /*MAKE SURE THIS IS FALSE*/
+                rendererSettings: {
+                    progressiveLoad: false
+                },
+                path: 'animation/data_happiness.json',
+                name: 'screenshot1',
+            };
+            anim4 = bodymovin.loadAnimation(animData4);
+
+
+
+            // SCROLLING DOWN
+            var waypoint = new Waypoint({
+                element: document.getElementById('screenshot4'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        anim4.goToAndPlay(1, true);
+                    }
+                },
+                offset: '70%'
             })
 
+
+            // SCROLLING DOWN
+            var waypoint = new Waypoint({
+                element: document.getElementById('screenshot4'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        // $('#lottie').css('opacity', 0); // for making animation invisible after scrolling past 30% of original vh
+                    }
+                },
+                offset: '-30%'
+            })
+
+
+            // SCROLLING UP
+            var waypoint = new Waypoint({
+                element: document.getElementById('screenshot4'),
+                handler: function (direction) {
+                    if (direction === 'up') {
+                        // $('#lottie').css('opacity', 1); // fpr making animation visible again triggered at 5% of vh from the top
+                        anim4.goToAndPlay(1, true);
+                    }
+                },
+                offset: '5%'
+            })
+
+
+
+
+
+            // SCROLLING DOWN
+            var waypoint2 = new Waypoint({
+                element: document.getElementById('screenshot2'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        anim2.goToAndPlay(1, true);
+                    }
+                },
+                offset: '70%'
+            })
+
+
+            // SCROLLING DOWN
+            var waypoint2 = new Waypoint({
+                element: document.getElementById('screenshot2'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        // $('#lottie').css('opacity', 0); // for making animation invisible after scrolling past 30% of original vh
+                    }
+                },
+                offset: '-30%'
+            })
+
+
+            // SCROLLING UP
+            var waypoint2 = new Waypoint({
+                element: document.getElementById('screenshot2'),
+                handler: function (direction) {
+                    if (direction === 'up') {
+                        // $('#lottie').css('opacity', 1); // fpr making animation visible again triggered at 5% of vh from the top
+                        anim2.goToAndPlay(1, true);
+                    }
+                },
+                offset: '5%'
+            })
+
+
+
+
+
+            // SCROLLING DOWN
+            var waypoint3 = new Waypoint({
+                element: document.getElementById('screenshot3'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        anim3.goToAndPlay(1, true);
+                    }
+                },
+                offset: '70%'
+            })
+
+
+            // SCROLLING DOWN
+            var waypoint3 = new Waypoint({
+                element: document.getElementById('screenshot3'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        // $('#lottie').css('opacity', 0); // for making animation invisible after scrolling past 30% of original vh
+                    }
+                },
+                offset: '-30%'
+            })
+
+
+            // SCROLLING UP
+            var waypoint3 = new Waypoint({
+                element: document.getElementById('screenshot3'),
+                handler: function (direction) {
+                    if (direction === 'up') {
+                        // $('#lottie').css('opacity', 1); // fpr making animation visible again triggered at 5% of vh from the top
+                        anim3.goToAndPlay(1, true);
+                    }
+                },
+                offset: '5%'
+            })
+
+
+
+
+
+
+
+            // SCROLLING DOWN
+            var waypoint5 = new Waypoint({
+                element: document.getElementById('screenshot1'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        anim1.goToAndPlay(1, true);
+                    }
+                },
+                offset: '70%'
+            })
+
+
+            // SCROLLING DOWN
+            var waypoint5 = new Waypoint({
+                element: document.getElementById('screenshot1'),
+                handler: function (direction) {
+                    if (direction === 'down') {
+                        // $('#lottie').css('opacity', 0); // for making animation invisible after scrolling past 30% of original vh
+                    }
+                },
+                offset: '-30%'
+            })
+
+
+            // SCROLLING UP
+            var waypoint5 = new Waypoint({
+                element: document.getElementById('screenshot1'),
+                handler: function (direction) {
+                    if (direction === 'up') {
+                        // $('#lottie').css('opacity', 1); // fpr making animation visible again triggered at 5% of vh from the top
+                        anim1.goToAndPlay(1, true);
+                    }
+                },
+                offset: '5%'
+            })
+
+
         });
-
-
-
-
-
-
-
-
-
     </script>
 
 </body>
